@@ -1,0 +1,45 @@
+
+ <div class="table-responsive">
+   <table class="table table-condensed table-bordered">
+        <thead>
+            <tr>
+                <th class="centered indexCell matchDouble">#</th>
+                <th class="extendedCell matchDouble">Room No</th>
+                <th class="centered">Class</th>
+                <th class="centered">Name</th>
+                <th class="centered">AC</th>
+                <th class="centered">Hotel / Villa</th>
+                <th class="centered">Price</th>
+                <th class="centered">Suite</th>
+                <th class="centered">From </th>
+                <th class="centered">To</th>
+                <th class="centered">Booked At</th>
+                <th class="centered" colspan="2">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let record of bookings; let i=index;">
+                <th>{{i+1}}</th>
+                <td>{{record.room.roomNumber}}</td>
+                <td>{{record.room.houseClass}}</td>
+                <td>{{record.room.houseName}}</td>
+                <td>{{record.room.isAc ? 'AC' : 'NON_AC'}}</td>
+                <td>{{record.room.isHotel? 'HOTEL' : 'VILLA'}}</td>
+                <td>{{record.room.price| number :'.2-2'}}</td>
+                <td>{{record.room.suiteName}}</td>
+                <td>{{record.bookingFrom | date:'dd/MM/yyyy'}}</td>
+                <td>{{record.bookingTo | date:'dd/MM/yyyy'}}</td>
+                <td>{{record.createdAt | date:'dd/MM/yyyy - hh:mm aa'}}</td>
+                <td *ngIf="!record.cancelled">{{record.cancelled ? 'CANCELLED' : 'ACTIVE'}}</td>
+                <td *ngIf="record.cancelled" colspan="2">{{record.cancelled ? 'CANCELLED' : 'ACTIVE'}}</td>
+                <td *ngIf="!record.cancelled"><button class="btn btnPrime" (click)="cancel(record.bookingId)" *ngIf="!record.cancelled"><span class="fa fa-remove"></span> Cancel</button></td>
+            </tr>
+            <tr *ngIf="bookings.length <1 ">
+                <th colspan="13">No Record found</th>
+                </tr>
+        </tbody>
+    </table>
+ 
+</div>
+
+<app-loader></app-loader>
