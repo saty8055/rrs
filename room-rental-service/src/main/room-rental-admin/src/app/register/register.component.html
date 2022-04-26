@@ -5,11 +5,19 @@
             <div class="fullLength centered">
                 <img src="/assets/logo.png" class="fixedImage">
             </div>
-            <h3 class="dark centered">Identity Please !</h3>
-            <form [formGroup]="form" (ngSubmit)="confirmForLogin()">
+            <h3 class="dark centered">Register here !</h3>
+            <form [formGroup]="form" (ngSubmit)="confirmForRegister()">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
                     <input id="username" type="text" class="form-control" formControlName="username" placeholder="Username">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
+                    <input id="fullName" type="text" class="form-control" formControlName="fullName" placeholder="Full Name">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
+                    <input id="email" type="text" class="form-control" formControlName="email" placeholder="e-Mail">
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon" style="height: 40px;"><i class="fa fa-lock"></i></span>
@@ -17,20 +25,19 @@
                     <span class="input-group-addon eyeBtn" style="height: 40px;" (click)="togglePassword()"><i class="fa fa-eye" [class.fa-eye-slash]="showPass"></i></span>
                 </div>
                 <div class="input-group fullLength">
-                    <button class="btn btnPrime fullLength">Login</button>
+                    <button class="btn btnPrime fullLength">Register</button>
                 </div>
                 <div class="input-group fullLength">
                     <label class="left fullLength"><span class="clickable fa" [class.fa-square-o]="!remember" [class.fa-check-square-o]="remember" (click)="rememberMe()"></span> Remember Me </label>
                 </div>
                 <div class="input-group fullLength">
-                    <button type="button" class="btn btnPrime fullLength" (click)="goAndRegister()">Register now ?</button>
+                    <button type="button" class="btn btnPrime fullLength" (click)="goAndLogin()">Already Registered ?</button>
                 </div>
             </form>
         </div>
     </div>
 
 </div>
-
 
 
 

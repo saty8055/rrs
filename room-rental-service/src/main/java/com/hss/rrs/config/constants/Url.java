@@ -16,6 +16,8 @@ public interface Url {
 	
 	String LOGIN = "/login";
 
+	String REGISTER = "/signUp";
+
 	String LOOKUP = "/lookup";
 
 	String RESET = "/reset";

@@ -8,6 +8,7 @@ import { ProfileComponent } from './dashboard/profile/profile.component';
 import { ResetComponent } from './reset/reset.component';
 import { BookingComponent } from './dashboard/booking/booking.component';
 import { RoomComponent } from './dashboard/room/room.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [{
   path: "",
@@ -30,6 +31,9 @@ const routes: Routes = [{
 }, {
   path: "login",
   component: LoginComponent
+}, {
+  path: "register",
+  component: RegisterComponent
 }, {
   path: "reset/:token",
   component: ResetComponent

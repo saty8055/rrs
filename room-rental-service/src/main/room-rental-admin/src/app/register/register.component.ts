@@ -9,11 +9,11 @@ import { LoaderComponent } from '../loader/loader.component';
 import { MsgService } from '../services/message/msg.service';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.css']
 })
-export class LoginComponent implements OnInit {
+export class RegisterComponent implements OnInit {
 
   form: FormGroup;
 
@@ -28,12 +28,10 @@ export class LoginComponent implements OnInit {
   ) {
     this.form = this.formBuilder.group({
       username: ['', Validators.required],
-      password: ['', Validators.required]
+      password: ['', Validators.required],
+      fullName: ['', Validators.required],
+      email: ['', Validators.required]
     })
-  }
-
-  goAndRegister() {
-    this.router.navigateByUrl("/register");
   }
 
   ngOnInit() {
@@ -57,19 +55,27 @@ export class LoginComponent implements OnInit {
   @ViewChild(LoaderComponent, { static: true })
   private loader: LoaderComponent;
 
-  confirmForLogin() {
+  goAndLogin() {
+    this.router.navigateByUrl("/login");
+  }
+
+  confirmForRegister() {
     if (this.form.get('username').value == "")
       this.bot.fail("Please enter a valid username !");
     else if (this.form.get('password').value == "")
       this.bot.fail("Please enter a valid password !");
+      else if (this.form.get('fullName').value == "")
+        this.bot.fail("Please enter a valid full name !");
+        else if (this.form.get('email').value == "")
+          this.bot.fail("e-mail cannot be blank !");
     else
-      this.login();
+      this.signUp();
   }
 
-  login() {
+  signUp() {
 
     this.loader.load();
-    this.api.login(this.form.value).subscribe(response => {
+    this.api.signUp(this.form.value).subscribe(response => {
       this.api.validateResponse(response, data => {
         this.loader.resume();
         if (this.remember) {

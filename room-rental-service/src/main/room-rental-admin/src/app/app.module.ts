@@ -18,6 +18,7 @@ import { ProfileComponent } from './dashboard/profile/profile.component';
 import { ResetComponent } from './reset/reset.component';
 import { RoomComponent } from './dashboard/room/room.component';
 import { BookingComponent } from './dashboard/booking/booking.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { BookingComponent } from './dashboard/booking/booking.component';
     ResetComponent,
     RoomComponent,
     BookingComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

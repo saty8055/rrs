@@ -123,7 +123,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container-fluid\">\n\n    <div class=\"row content\">\n        <div class=\"col-lg-4 col-md-4 col-xs-12 col-sm-12 col-lg-offset-4 col-md-4\">\n            <div class=\"fullLength centered\">\n                <img src=\"/assets/logo.png\" class=\"fixedImage\">\n            </div>\n            <h3 class=\"dark centered\">Identity Please !</h3>\n            <form [formGroup]=\"form\" (ngSubmit)=\"confirmForLogin()\">\n                <div class=\"input-group\">\n                    <span class=\"input-group-addon\"><i class=\"fa fa-user-circle\"></i></span>\n                    <input id=\"username\" type=\"text\" class=\"form-control\" formControlName=\"username\" placeholder=\"Username\">\n                </div>\n                <div class=\"input-group\">\n                    <span class=\"input-group-addon\" style=\"height: 40px;\"><i class=\"fa fa-lock\"></i></span>\n                    <input id=\"password\" [type]=\"showPass ? 'text' : 'password'\" class=\"form-control hasEyeBtn\" formControlName=\"password\" placeholder=\"Password\">\n                    <span class=\"input-group-addon eyeBtn\" style=\"height: 40px;\" (click)=\"togglePassword()\"><i class=\"fa fa-eye\" [class.fa-eye-slash]=\"showPass\"></i></span>\n                </div>\n                <div class=\"input-group fullLength\">\n                    <label class=\"right fullLength red trigger\" data-toggle=\"modal\" data-target=\"#forgotPass\">Forgot Password ?</label>\n                </div>\n                <div class=\"input-group fullLength\">\n                    <button class=\"btn btnPrime fullLength\">Login</button>\n                </div>\n                <div class=\"input-group fullLength\">\n                    <label class=\"left fullLength\"><span class=\"clickable fa\" [class.fa-square-o]=\"!remember\" [class.fa-check-square-o]=\"remember\" (click)=\"rememberMe()\"></span> Remember Me </label>\n                </div>\n            </form>\n        </div>\n    </div>\n\n</div>\n\n<div class=\"container-fluid\" style=\"margin-top:70px;\">\n    <div class=\"row\">\n        <div class=\"col-lg-12 col-sm-12 col-xs-12 col-md-12 right smoky\">\n            <h5>Developed by <img src=\"/assets/megasys.ico\" class=\"credicon\" /> <span class=\"crediText\"> Megasys Infotech</span></h5>\n        </div>\n    </div>\n\n</div>\n\n\n\n<!-- Modal -->\n<div class=\"modal fade\" id=\"forgotPass\" role=\"dialog\">\n    <div class=\"modal-dialog\">\n\n        <!-- Modal content-->\n        <div class=\"modal-content boxed\">\n            <div class=\"modal-header\">\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n                <h4 class=\"modal-title heading\">Reset Password !</h4>\n            </div>\n            <div class=\"modal-body\">\n                <div class=\"input-group\">\n                    <span class=\"input-group-addon\"><i class=\"fa fa-user-circle\"></i></span>\n                    <input id=\"username\" type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" placeholder=\"Username\">\n                </div>\n            </div>\n            <div class=\"modal-footer centered\">\n                <button type=\"button\" class=\"btn\" data-dismiss=\"modal\" (click)=\"resetPassword()\">Send Reset Link</button>\n            </div>\n        </div>\n\n    </div>\n</div>\n\n\n\n<app-loader></app-loader>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container-fluid\">\n\n    <div class=\"row content\">\n        <div class=\"col-lg-4 col-md-4 col-xs-12 col-sm-12 col-lg-offset-4 col-md-4\">\n            <div class=\"fullLength centered\">\n                <img src=\"/assets/logo.png\" class=\"fixedImage\">\n            </div>\n            <h3 class=\"dark centered\">Identity Please !</h3>\n            <form [formGroup]=\"form\" (ngSubmit)=\"confirmForLogin()\">\n                <div class=\"input-group\">\n                    <span class=\"input-group-addon\"><i class=\"fa fa-user-circle\"></i></span>\n                    <input id=\"username\" type=\"text\" class=\"form-control\" formControlName=\"username\" placeholder=\"Username\">\n                </div>\n                <div class=\"input-group\">\n                    <span class=\"input-group-addon\" style=\"height: 40px;\"><i class=\"fa fa-lock\"></i></span>\n                    <input id=\"password\" [type]=\"showPass ? 'text' : 'password'\" class=\"form-control hasEyeBtn\" formControlName=\"password\" placeholder=\"Password\">\n                    <span class=\"input-group-addon eyeBtn\" style=\"height: 40px;\" (click)=\"togglePassword()\"><i class=\"fa fa-eye\" [class.fa-eye-slash]=\"showPass\"></i></span>\n                </div>\n                <div class=\"input-group fullLength\">\n                    <button class=\"btn btnPrime fullLength\">Login</button>\n                </div>\n                <div class=\"input-group fullLength\">\n                    <label class=\"left fullLength\"><span class=\"clickable fa\" [class.fa-square-o]=\"!remember\" [class.fa-check-square-o]=\"remember\" (click)=\"rememberMe()\"></span> Remember Me </label>\n                </div>\n                <div class=\"input-group fullLength\">\n                    <button type=\"button\" class=\"btn btnPrime fullLength\" (click)=\"goAndRegister()\">Register now ?</button>\n                </div>\n            </form>\n        </div>\n    </div>\n\n</div>\n\n\n\n\n<!-- Modal -->\n<div class=\"modal fade\" id=\"forgotPass\" role=\"dialog\">\n    <div class=\"modal-dialog\">\n\n        <!-- Modal content-->\n        <div class=\"modal-content boxed\">\n            <div class=\"modal-header\">\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n                <h4 class=\"modal-title heading\">Reset Password !</h4>\n            </div>\n            <div class=\"modal-body\">\n                <div class=\"input-group\">\n                    <span class=\"input-group-addon\"><i class=\"fa fa-user-circle\"></i></span>\n                    <input id=\"username\" type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" placeholder=\"Username\">\n                </div>\n            </div>\n            <div class=\"modal-footer centered\">\n                <button type=\"button\" class=\"btn\" data-dismiss=\"modal\" (click)=\"resetPassword()\">Send Reset Link</button>\n            </div>\n        </div>\n\n    </div>\n</div>\n\n\n\n<app-loader></app-loader>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/register/register.component.html":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/register/register.component.html ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container-fluid\">\n\n    <div class=\"row content\">\n        <div class=\"col-lg-4 col-md-4 col-xs-12 col-sm-12 col-lg-offset-4 col-md-4\">\n            <div class=\"fullLength centered\">\n                <img src=\"/assets/logo.png\" class=\"fixedImage\">\n            </div>\n            <h3 class=\"dark centered\">Register here !</h3>\n            <form [formGroup]=\"form\" (ngSubmit)=\"confirmForRegister()\">\n                <div class=\"input-group\">\n                    <span class=\"input-group-addon\"><i class=\"fa fa-user-circle\"></i></span>\n                    <input id=\"username\" type=\"text\" class=\"form-control\" formControlName=\"username\" placeholder=\"Username\">\n                </div>\n                <div class=\"input-group\">\n                    <span class=\"input-group-addon\"><i class=\"fa fa-user-circle\"></i></span>\n                    <input id=\"fullName\" type=\"text\" class=\"form-control\" formControlName=\"fullName\" placeholder=\"Full Name\">\n                </div>\n                <div class=\"input-group\">\n                    <span class=\"input-group-addon\"><i class=\"fa fa-user-circle\"></i></span>\n                    <input id=\"email\" type=\"text\" class=\"form-control\" formControlName=\"email\" placeholder=\"e-Mail\">\n                </div>\n                <div class=\"input-group\">\n                    <span class=\"input-group-addon\" style=\"height: 40px;\"><i class=\"fa fa-lock\"></i></span>\n                    <input id=\"password\" [type]=\"showPass ? 'text' : 'password'\" class=\"form-control hasEyeBtn\" formControlName=\"password\" placeholder=\"Password\">\n                    <span class=\"input-group-addon eyeBtn\" style=\"height: 40px;\" (click)=\"togglePassword()\"><i class=\"fa fa-eye\" [class.fa-eye-slash]=\"showPass\"></i></span>\n                </div>\n                <div class=\"input-group fullLength\">\n                    <button class=\"btn btnPrime fullLength\">Register</button>\n                </div>\n                <div class=\"input-group fullLength\">\n                    <label class=\"left fullLength\"><span class=\"clickable fa\" [class.fa-square-o]=\"!remember\" [class.fa-check-square-o]=\"remember\" (click)=\"rememberMe()\"></span> Remember Me </label>\n                </div>\n                <div class=\"input-group fullLength\">\n                    <button type=\"button\" class=\"btn btnPrime fullLength\" (click)=\"goAndLogin()\">Already Registered ?</button>\n                </div>\n            </form>\n        </div>\n    </div>\n\n</div>\n\n\n\n<!-- Modal -->\n<div class=\"modal fade\" id=\"forgotPass\" role=\"dialog\">\n    <div class=\"modal-dialog\">\n\n        <!-- Modal content-->\n        <div class=\"modal-content boxed\">\n            <div class=\"modal-header\">\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n                <h4 class=\"modal-title heading\">Reset Password !</h4>\n            </div>\n            <div class=\"modal-body\">\n                <div class=\"input-group\">\n                    <span class=\"input-group-addon\"><i class=\"fa fa-user-circle\"></i></span>\n                    <input id=\"username\" type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" placeholder=\"Username\">\n                </div>\n            </div>\n            <div class=\"modal-footer centered\">\n                <button type=\"button\" class=\"btn\" data-dismiss=\"modal\" (click)=\"resetPassword()\">Send Reset Link</button>\n            </div>\n        </div>\n\n    </div>\n</div>\n\n\n\n<app-loader></app-loader>");
 
 /***/ }),
 
@@ -415,6 +428,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _reset_reset_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./reset/reset.component */ "./src/app/reset/reset.component.ts");
 /* harmony import */ var _dashboard_booking_booking_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./dashboard/booking/booking.component */ "./src/app/dashboard/booking/booking.component.ts");
 /* harmony import */ var _dashboard_room_room_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./dashboard/room/room.component */ "./src/app/dashboard/room/room.component.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
+
 
 
 
@@ -447,6 +462,9 @@ const routes = [{
     }, {
         path: "login",
         component: _login_login_component__WEBPACK_IMPORTED_MODULE_5__["LoginComponent"]
+    }, {
+        path: "register",
+        component: _register_register_component__WEBPACK_IMPORTED_MODULE_11__["RegisterComponent"]
     }, {
         path: "reset/:token",
         component: _reset_reset_component__WEBPACK_IMPORTED_MODULE_8__["ResetComponent"]
@@ -543,6 +561,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _reset_reset_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./reset/reset.component */ "./src/app/reset/reset.component.ts");
 /* harmony import */ var _dashboard_room_room_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./dashboard/room/room.component */ "./src/app/dashboard/room/room.component.ts");
 /* harmony import */ var _dashboard_booking_booking_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./dashboard/booking/booking.component */ "./src/app/dashboard/booking/booking.component.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
+
 
 
 
@@ -577,6 +597,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _reset_reset_component__WEBPACK_IMPORTED_MODULE_17__["ResetComponent"],
             _dashboard_room_room_component__WEBPACK_IMPORTED_MODULE_18__["RoomComponent"],
             _dashboard_booking_booking_component__WEBPACK_IMPORTED_MODULE_19__["BookingComponent"],
+            _register_register_component__WEBPACK_IMPORTED_MODULE_20__["RegisterComponent"],
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -1155,6 +1176,9 @@ let LoginComponent = class LoginComponent {
             password: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]
         });
     }
+    goAndRegister() {
+        this.router.navigateByUrl("/register");
+    }
     ngOnInit() {
         if (localStorage.getItem('currentToken')) {
         }
@@ -1191,6 +1215,7 @@ let LoginComponent = class LoginComponent {
                 localStorage.setItem('currentRole', data.user.role);
                 this.router.navigateByUrl("/");
             }, error => {
+                this.loader.resume();
                 this.bot.fail(error);
             });
         });
@@ -1235,6 +1260,161 @@ LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./login.component.css */ "./src/app/login/login.component.css")).default]
     })
 ], LoginComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/register/register.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/register/register.component.css ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3JlZ2lzdGVyL3JlZ2lzdGVyLmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/register/register.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/register/register.component.ts ***!
+  \************************************************/
+/*! exports provided: RegisterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterComponent", function() { return RegisterComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _services_api_api_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../services/api/api.service */ "./src/app/services/api/api.service.ts");
+/* harmony import */ var _services_notification_bot_bot_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../services/notification-bot/bot.service */ "./src/app/services/notification-bot/bot.service.ts");
+/* harmony import */ var _services_validator_validator_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../services/validator/validator.service */ "./src/app/services/validator/validator.service.ts");
+/* harmony import */ var _loader_loader_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../loader/loader.component */ "./src/app/loader/loader.component.ts");
+/* harmony import */ var _services_message_msg_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../services/message/msg.service */ "./src/app/services/message/msg.service.ts");
+
+
+
+
+
+
+
+
+
+
+let RegisterComponent = class RegisterComponent {
+    constructor(http, router, formBuilder, api, bot, validator, msg) {
+        this.http = http;
+        this.router = router;
+        this.formBuilder = formBuilder;
+        this.api = api;
+        this.bot = bot;
+        this.validator = validator;
+        this.msg = msg;
+        this.remember = false;
+        this.showPass = false;
+        this.username = "";
+        this.form = this.formBuilder.group({
+            username: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+            password: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+            fullName: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+            email: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]
+        });
+    }
+    ngOnInit() {
+        if (localStorage.getItem('currentToken')) {
+        }
+        if (localStorage.getItem('remember') == "true") {
+            var myUser = localStorage.getItem("savedUser");
+            var myPass = localStorage.getItem("savedPassword");
+            if (this.validator.isNotBlank(myUser) && this.validator.isNotBlank(myPass)) {
+                this.form.patchValue({
+                    username: myUser,
+                    password: myPass
+                });
+                this.remember = true;
+            }
+        }
+    }
+    goAndLogin() {
+        this.router.navigateByUrl("/login");
+    }
+    confirmForRegister() {
+        if (this.form.get('username').value == "")
+            this.bot.fail("Please enter a valid username !");
+        else if (this.form.get('password').value == "")
+            this.bot.fail("Please enter a valid password !");
+        else if (this.form.get('fullName').value == "")
+            this.bot.fail("Please enter a valid full name !");
+        else if (this.form.get('email').value == "")
+            this.bot.fail("e-mail cannot be blank !");
+        else
+            this.signUp();
+    }
+    signUp() {
+        this.loader.load();
+        this.api.signUp(this.form.value).subscribe(response => {
+            this.api.validateResponse(response, data => {
+                this.loader.resume();
+                if (this.remember) {
+                    localStorage.setItem("savedUser", this.form.get("username").value);
+                    localStorage.setItem("savedPassword", this.form.get("password").value);
+                }
+                localStorage.setItem('currentToken', data.token);
+                localStorage.setItem('currentRole', data.user.role);
+                this.router.navigateByUrl("/");
+            }, error => {
+                this.loader.resume();
+                this.bot.fail(error);
+            });
+        });
+    }
+    rememberMe() {
+        localStorage.setItem("savedUser", this.form.get("username").value);
+        localStorage.setItem("savedPassword", this.form.get("password").value);
+        this.remember = !this.remember;
+        localStorage.setItem("remember", this.remember.toString());
+    }
+    togglePassword() {
+        this.showPass = !this.showPass;
+    }
+    resetPassword() {
+        if (this.username == "")
+            this.bot.fail("Please enter a username first !");
+        else {
+            this.api.forgot(this.username).subscribe(data => {
+                this.bot.alert("The reset link has been sent to your registered e-mail !");
+            }, error => {
+                this.bot.fail(this.msg.show(error.error.status));
+            });
+        }
+    }
+};
+RegisterComponent.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+    { type: _services_api_api_service__WEBPACK_IMPORTED_MODULE_5__["ApiService"] },
+    { type: _services_notification_bot_bot_service__WEBPACK_IMPORTED_MODULE_6__["BotService"] },
+    { type: _services_validator_validator_service__WEBPACK_IMPORTED_MODULE_7__["ValidatorService"] },
+    { type: _services_message_msg_service__WEBPACK_IMPORTED_MODULE_9__["MsgService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_loader_loader_component__WEBPACK_IMPORTED_MODULE_8__["LoaderComponent"], { static: true })
+], RegisterComponent.prototype, "loader", void 0);
+RegisterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-register',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./register.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/register/register.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./register.component.css */ "./src/app/register/register.component.css")).default]
+    })
+], RegisterComponent);
 
 
 
@@ -1356,6 +1536,7 @@ class ApiService {
         this.HOST = "http://localhost:8060";
         this.SECURE = this.HOST + "/api";
         this.LOGIN_URL = this.HOST + "/login";
+        this.SIGNUP_URL = this.HOST + "/signUp";
         this.LOOKUP_URL = this.HOST + "/lookup";
         this.PROFILE_URL = this.SECURE + "/profile";
         this.BOOKING_URL = this.SECURE + "/booking";
@@ -1383,6 +1564,9 @@ class ApiService {
     }
     login(form) {
         return this.http.post(this.LOGIN_URL, form);
+    }
+    signUp(form) {
+        return this.http.post(this.SIGNUP_URL, form);
     }
     isLoggedIn() {
         let token = localStorage.getItem("currentToken");

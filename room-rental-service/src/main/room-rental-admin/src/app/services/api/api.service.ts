@@ -19,6 +19,8 @@ export class ApiService {
 
   private LOGIN_URL = this.HOST + "/login";
 
+  private SIGNUP_URL = this.HOST + "/signUp";
+
   private LOOKUP_URL = this.HOST + "/lookup";
 
   private PROFILE_URL = this.SECURE + "/profile";
@@ -57,6 +59,10 @@ export class ApiService {
 
   public login(form): Observable<any> {
     return this.http.post(this.LOGIN_URL, form);
+  }
+
+  public signUp(form): Observable<any> {
+    return this.http.post(this.SIGNUP_URL, form);
   }
 
   isLoggedIn(): boolean {

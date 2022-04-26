@@ -165,4 +165,24 @@ public class UserController {
 		return ResponseEntity.ok(new AuthenticatedResponse(token, user));
 	}
 
+	/**
+	 * @param userBean
+	 * @return 401: Invalid Credentials, 200 -Success with token & user details
+	 */
+	@SuppressWarnings("unused")
+	@PostMapping(Url.REGISTER)
+	public ResponseEntity<?> register(@RequestBody UserDto userBean) throws UnPrivilegedAccess, DataValidityException {
+
+		logger.info("Register hit ...");
+
+		User user = userService.addUser(userBean);
+
+		final UserDetails userDetails = new SecureUser(user);
+
+		String token = user != null ? tokenProvider.generateToken(userDetails) : null;
+
+		logger.info("Operation complete! sending response ...");
+		return ResponseEntity.ok(new AuthenticatedResponse(token, user));
+	}
+
 }
