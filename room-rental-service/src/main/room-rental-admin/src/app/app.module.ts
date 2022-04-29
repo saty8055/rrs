@@ -19,6 +19,7 @@ import { ResetComponent } from './reset/reset.component';
 import { RoomComponent } from './dashboard/room/room.component';
 import { BookingComponent } from './dashboard/booking/booking.component';
 import { RegisterComponent } from './register/register.component';
+import { PaymentHistoryComponent } from './dashboard/payment-history/payment-history.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { RegisterComponent } from './register/register.component';
     RoomComponent,
     BookingComponent,
     RegisterComponent,
+    PaymentHistoryComponent,
   ],
   imports: [
     BrowserModule,

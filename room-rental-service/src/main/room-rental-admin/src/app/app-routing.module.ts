@@ -9,6 +9,7 @@ import { ResetComponent } from './reset/reset.component';
 import { BookingComponent } from './dashboard/booking/booking.component';
 import { RoomComponent } from './dashboard/room/room.component';
 import { RegisterComponent } from './register/register.component';
+import { PaymentHistoryComponent } from './dashboard/payment-history/payment-history.component';
 
 const routes: Routes = [{
   path: "",
@@ -19,6 +20,9 @@ const routes: Routes = [{
   },{
     path: "booking-history",
     component: BookingComponent
+  },{
+    path: "payment-history",
+    component: PaymentHistoryComponent
   }, {
     path: "room",
     component: RoomComponent

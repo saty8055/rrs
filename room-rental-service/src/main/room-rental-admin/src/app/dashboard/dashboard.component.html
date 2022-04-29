@@ -27,6 +27,10 @@
         <span class="sideIcon fa fa-calendar" *ngIf="!sideBarMenu"></span>
         <span *ngIf="sideBarMenu" class="fullLength"> <span class="sideIconDefault fa fa-calendar"></span> Booking History</span>
     </a>
+    <a [class.active]="key=='payment-history'" (click)="activate('payment-history')" [class.centered]="!sideBar" tooltip="payment History" placement="right" show-delay="200">
+        <span class="sideIcon fa fa-calendar" *ngIf="!sideBarMenu"></span>
+        <span *ngIf="sideBarMenu" class="fullLength"> <span class="sideIconDefault fa fa-calendar"></span> Payment History</span>
+    </a>
     <a [class.active]="key=='room'" (click)="activate('room')" [class.centered]="!sideBar" tooltip="Rooms" placement="right" show-delay="200">
         <span class="sideIcon fa fa-list" *ngIf="!sideBarMenu"></span>
         <span *ngIf="sideBarMenu" class="fullLength"> <span class="sideIconDefault fa fa-list"></span>Rooms</span>

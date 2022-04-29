@@ -91,7 +91,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!-- Topbar -->\n<nav class=\"navbar navbar-fixed-top boxed\" style=\"z-index:10\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle topSpan\" (click)=\"toggleRightBar()\">\n                <span class=\"fa fa-user-circle\"></span>\n            </button>\n            <div class=\"navbar-brand\">\n                <div class=\"logoHolder\">\n                    <a class=\"btn\" (click)=\"toggleSideBar()\" [tooltip]=\"sideBar ? 'Hide Sidebar' : 'Open SideBar'\" placement=\"right\" show-delay=\"200\"><span class=\"fa fa-bars\"></span> </a>\n                    <img src=\"/assets/logoTagThumb.png\" style=\"cursor: none;\">\n                </div>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\">\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a (click)=\"activate('profile')\" [class.active]=\"key=='profile'\"><i class=\"fa fa-user-circle-o\"></i> Profile</a></li>\n                <li><a (click)=\"logout()\"><i class=\"fa fa-power-off\"></i> Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<!-- SideBar -->\n<div class=\"sideBar boxed\" [class.sideBarOpen]=\"sideBar\" style=\"z-index:100\">\n    <a [class.active]=\"key=='booking-history'\" (click)=\"activate('booking-history')\" [class.centered]=\"!sideBar\" tooltip=\"Booking History\" placement=\"right\" show-delay=\"200\">\n        <span class=\"sideIcon fa fa-calendar\" *ngIf=\"!sideBarMenu\"></span>\n        <span *ngIf=\"sideBarMenu\" class=\"fullLength\"> <span class=\"sideIconDefault fa fa-calendar\"></span> Booking History</span>\n    </a>\n    <a [class.active]=\"key=='room'\" (click)=\"activate('room')\" [class.centered]=\"!sideBar\" tooltip=\"Rooms\" placement=\"right\" show-delay=\"200\">\n        <span class=\"sideIcon fa fa-list\" *ngIf=\"!sideBarMenu\"></span>\n        <span *ngIf=\"sideBarMenu\" class=\"fullLength\"> <span class=\"sideIconDefault fa fa-list\"></span>Rooms</span>\n    </a>\n</div>\n\n<!-- Right SideBar -->\n<div class=\"rightSideBar\" [class.rightSideBarOpen]=\"rightSideBar\" style=\"z-index:100\">\n    <a (click)=\"activate('profile')\" [class.active]=\"key=='profile'\">\n        <span class=\"fullLength\"> <span class=\"sideIconDefault fa fa-user-circle-o\"></span> Profile</span>\n    </a>\n    <a (click)=\"logout()\">\n        <span class=\"fullLength\"> <span class=\"sideIconDefault fa fa-power-off\"></span>Logout</span>\n    </a>\n</div>\n\n<div class=\"contentBox\" [class.contentWall]=\"sideBar\">\n    <router-outlet></router-outlet>\n</div>";
+    __webpack_exports__["default"] = "<!-- Topbar -->\n<nav class=\"navbar navbar-fixed-top boxed\" style=\"z-index:10\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle topSpan\" (click)=\"toggleRightBar()\">\n                <span class=\"fa fa-user-circle\"></span>\n            </button>\n            <div class=\"navbar-brand\">\n                <div class=\"logoHolder\">\n                    <a class=\"btn\" (click)=\"toggleSideBar()\" [tooltip]=\"sideBar ? 'Hide Sidebar' : 'Open SideBar'\" placement=\"right\" show-delay=\"200\"><span class=\"fa fa-bars\"></span> </a>\n                    <img src=\"/assets/logoTagThumb.png\" style=\"cursor: none;\">\n                </div>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\">\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a (click)=\"activate('profile')\" [class.active]=\"key=='profile'\"><i class=\"fa fa-user-circle-o\"></i> Profile</a></li>\n                <li><a (click)=\"logout()\"><i class=\"fa fa-power-off\"></i> Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<!-- SideBar -->\n<div class=\"sideBar boxed\" [class.sideBarOpen]=\"sideBar\" style=\"z-index:100\">\n    <a [class.active]=\"key=='booking-history'\" (click)=\"activate('booking-history')\" [class.centered]=\"!sideBar\" tooltip=\"Booking History\" placement=\"right\" show-delay=\"200\">\n        <span class=\"sideIcon fa fa-calendar\" *ngIf=\"!sideBarMenu\"></span>\n        <span *ngIf=\"sideBarMenu\" class=\"fullLength\"> <span class=\"sideIconDefault fa fa-calendar\"></span> Booking History</span>\n    </a>\n    <a [class.active]=\"key=='payment-history'\" (click)=\"activate('payment-history')\" [class.centered]=\"!sideBar\" tooltip=\"payment History\" placement=\"right\" show-delay=\"200\">\n        <span class=\"sideIcon fa fa-calendar\" *ngIf=\"!sideBarMenu\"></span>\n        <span *ngIf=\"sideBarMenu\" class=\"fullLength\"> <span class=\"sideIconDefault fa fa-calendar\"></span> Payment History</span>\n    </a>\n    <a [class.active]=\"key=='room'\" (click)=\"activate('room')\" [class.centered]=\"!sideBar\" tooltip=\"Rooms\" placement=\"right\" show-delay=\"200\">\n        <span class=\"sideIcon fa fa-list\" *ngIf=\"!sideBarMenu\"></span>\n        <span *ngIf=\"sideBarMenu\" class=\"fullLength\"> <span class=\"sideIconDefault fa fa-list\"></span>Rooms</span>\n    </a>\n</div>\n\n<!-- Right SideBar -->\n<div class=\"rightSideBar\" [class.rightSideBarOpen]=\"rightSideBar\" style=\"z-index:100\">\n    <a (click)=\"activate('profile')\" [class.active]=\"key=='profile'\">\n        <span class=\"fullLength\"> <span class=\"sideIconDefault fa fa-user-circle-o\"></span> Profile</span>\n    </a>\n    <a (click)=\"logout()\">\n        <span class=\"fullLength\"> <span class=\"sideIconDefault fa fa-power-off\"></span>Logout</span>\n    </a>\n</div>\n\n<div class=\"contentBox\" [class.contentWall]=\"sideBar\">\n    <router-outlet></router-outlet>\n</div>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/dashboard/payment-history/payment-history.component.html":
+  /*!****************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/dashboard/payment-history/payment-history.component.html ***!
+    \****************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppDashboardPaymentHistoryPaymentHistoryComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n <div class=\"table-responsive\">\n    <table class=\"table table-condensed table-bordered\">\n         <thead>\n             <tr>\n                 <th class=\"centered indexCell matchDouble\">#</th>\n                 <th class=\"extendedCell matchDouble\">Transaction ID</th>\n                 <th class=\"centered\">Transaction Amount</th>\n                 <th class=\"centered\">Transaction Time</th>\n                 <th class=\"centered\">Room Number</th>\n             </tr>\n         </thead>\n         <tbody>\n             <tr *ngFor=\"let record of bookings; let i=index;\">\n                 <th>{{i+1}}</th>\n                 <td>{{record.room.bookingId}}</td>\n                 <td>{{record.room.price| number :'.2-2'}}</td>\n                 <td>{{record.createdAt | date:'dd/MM/yyyy - hh:mm aa'}}</td>\n                 <td>{{record.room.roomNumber}}</td>\n             </tr>\n             <tr *ngIf=\"bookings.length <1 \">\n                 <th colspan=\"13\">No Record found</th>\n                 </tr>\n         </tbody>\n     </table>\n  \n </div>\n \n <app-loader></app-loader>";
     /***/
   },
 
@@ -930,6 +950,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _register_register_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! ./register/register.component */
     "./src/app/register/register.component.ts");
+    /* harmony import */
+
+
+    var _dashboard_payment_history_payment_history_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! ./dashboard/payment-history/payment-history.component */
+    "./src/app/dashboard/payment-history/payment-history.component.ts");
 
     var routes = [{
       path: "",
@@ -940,6 +966,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         path: "booking-history",
         component: _dashboard_booking_booking_component__WEBPACK_IMPORTED_MODULE_9__["BookingComponent"]
+      }, {
+        path: "payment-history",
+        component: _dashboard_payment_history_payment_history_component__WEBPACK_IMPORTED_MODULE_12__["PaymentHistoryComponent"]
       }, {
         path: "room",
         component: _dashboard_room_room_component__WEBPACK_IMPORTED_MODULE_10__["RoomComponent"]
@@ -1190,13 +1219,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _register_register_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
     /*! ./register/register.component */
     "./src/app/register/register.component.ts");
+    /* harmony import */
+
+
+    var _dashboard_payment_history_payment_history_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
+    /*! ./dashboard/payment-history/payment-history.component */
+    "./src/app/dashboard/payment-history/payment-history.component.ts");
 
     var AppModule = /*#__PURE__*/_createClass(function AppModule() {
       _classCallCheck(this, AppModule);
     });
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_6__["DashboardComponent"], _login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"], _loader_loader_component__WEBPACK_IMPORTED_MODULE_13__["LoaderComponent"], _f04_f04_component__WEBPACK_IMPORTED_MODULE_14__["F04Component"], _dashboard_profile_profile_component__WEBPACK_IMPORTED_MODULE_16__["ProfileComponent"], _reset_reset_component__WEBPACK_IMPORTED_MODULE_17__["ResetComponent"], _dashboard_room_room_component__WEBPACK_IMPORTED_MODULE_18__["RoomComponent"], _dashboard_booking_booking_component__WEBPACK_IMPORTED_MODULE_19__["BookingComponent"], _register_register_component__WEBPACK_IMPORTED_MODULE_20__["RegisterComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_6__["DashboardComponent"], _login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"], _loader_loader_component__WEBPACK_IMPORTED_MODULE_13__["LoaderComponent"], _f04_f04_component__WEBPACK_IMPORTED_MODULE_14__["F04Component"], _dashboard_profile_profile_component__WEBPACK_IMPORTED_MODULE_16__["ProfileComponent"], _reset_reset_component__WEBPACK_IMPORTED_MODULE_17__["ResetComponent"], _dashboard_room_room_component__WEBPACK_IMPORTED_MODULE_18__["RoomComponent"], _dashboard_booking_booking_component__WEBPACK_IMPORTED_MODULE_19__["BookingComponent"], _register_register_component__WEBPACK_IMPORTED_MODULE_20__["RegisterComponent"], _dashboard_payment_history_payment_history_component__WEBPACK_IMPORTED_MODULE_21__["PaymentHistoryComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], ng2_tooltip_directive__WEBPACK_IMPORTED_MODULE_11__["TooltipModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], ngx_toastr__WEBPACK_IMPORTED_MODULE_9__["ToastrModule"].forRoot(), _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__["BrowserAnimationsModule"]],
       providers: [_angular_common__WEBPACK_IMPORTED_MODULE_15__["DatePipe"], {
         provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HTTP_INTERCEPTORS"],
@@ -1511,6 +1546,160 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./src/app/dashboard/payment-history/payment-history.component.css":
+  /*!*************************************************************************!*\
+    !*** ./src/app/dashboard/payment-history/payment-history.component.css ***!
+    \*************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppDashboardPaymentHistoryPaymentHistoryComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Rhc2hib2FyZC9wYXltZW50LWhpc3RvcnkvcGF5bWVudC1oaXN0b3J5LmNvbXBvbmVudC5jc3MifQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/dashboard/payment-history/payment-history.component.ts":
+  /*!************************************************************************!*\
+    !*** ./src/app/dashboard/payment-history/payment-history.component.ts ***!
+    \************************************************************************/
+
+  /*! exports provided: PaymentHistoryComponent */
+
+  /***/
+  function srcAppDashboardPaymentHistoryPaymentHistoryComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PaymentHistoryComponent", function () {
+      return PaymentHistoryComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_loader_loader_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/loader/loader.component */
+    "./src/app/loader/loader.component.ts");
+    /* harmony import */
+
+
+    var src_app_services_api_api_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! src/app/services/api/api.service */
+    "./src/app/services/api/api.service.ts");
+    /* harmony import */
+
+
+    var src_app_services_notification_bot_bot_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! src/app/services/notification-bot/bot.service */
+    "./src/app/services/notification-bot/bot.service.ts");
+
+    var PaymentHistoryComponent = /*#__PURE__*/function () {
+      function PaymentHistoryComponent(api, bot) {
+        _classCallCheck(this, PaymentHistoryComponent);
+
+        this.api = api;
+        this.bot = bot;
+        this.page = {};
+        this.bookings = [];
+        this.pageNumber = 0;
+        this.pageSize = 50;
+        this.sortBy = "bookingFrom";
+        this.sortDirection = "desc";
+      }
+
+      _createClass(PaymentHistoryComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          this.load();
+        }
+      }, {
+        key: "load",
+        value: function load() {
+          var _this4 = this;
+
+          this.loader.load();
+          this.api.listBookings(this.pageNumber, this.pageSize, this.sortBy, this.sortDirection).subscribe(function (response) {
+            _this4.loader.resume();
+
+            _this4.api.validateResponse(response, function (data) {
+              _this4.page.numberOfElements = data.numberOfElements;
+              _this4.page.totalPages = data.totalPages;
+              _this4.page.totalElements = data.totalElements;
+              _this4.bookings = data.content;
+            }, function (error) {
+              _this4.bot.fail(error);
+            });
+          });
+        }
+      }, {
+        key: "cancel",
+        value: function cancel(id) {
+          var _this5 = this;
+
+          this.loader.load();
+          this.api.cancel(id).subscribe(function (response) {
+            _this5.loader.resume();
+
+            _this5.api.validateResponse(response, function (data) {
+              _this5.bot.success("Booking Cancelled !");
+
+              _this5.load();
+            }, function (error) {
+              _this5.bot.fail(error);
+            });
+          });
+        }
+      }]);
+
+      return PaymentHistoryComponent;
+    }();
+
+    PaymentHistoryComponent.ctorParameters = function () {
+      return [{
+        type: src_app_services_api_api_service__WEBPACK_IMPORTED_MODULE_3__["ApiService"]
+      }, {
+        type: src_app_services_notification_bot_bot_service__WEBPACK_IMPORTED_MODULE_4__["BotService"]
+      }];
+    };
+
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(src_app_loader_loader_component__WEBPACK_IMPORTED_MODULE_2__["LoaderComponent"], {
+      "static": true
+    })], PaymentHistoryComponent.prototype, "loader", void 0);
+    PaymentHistoryComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-payment-history',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./payment-history.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/dashboard/payment-history/payment-history.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./payment-history.component.css */
+      "./src/app/dashboard/payment-history/payment-history.component.css"))["default"]]
+    })], PaymentHistoryComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/dashboard/profile/profile.component.css":
   /*!*********************************************************!*\
     !*** ./src/app/dashboard/profile/profile.component.css ***!
@@ -1602,39 +1791,39 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this4 = this;
+          var _this6 = this;
 
           this.api.getUser().subscribe(function (data) {
-            _this4.loader.resume();
+            _this6.loader.resume();
 
-            _this4.user = data;
+            _this6.user = data;
           }, function (error) {
-            _this4.loader.resume();
+            _this6.loader.resume();
 
-            _this4.bot.fail(_this4.msg.show(error.error.status));
+            _this6.bot.fail(_this6.msg.show(error.error.status));
           });
         }
       }, {
         key: "changePassword",
         value: function changePassword() {
-          var _this5 = this;
+          var _this7 = this;
 
           if (this.cPass == this.pass && this.pass != "" && this.oldPass != "") {
             this.loader.load();
             this.api.updatePassword(this.pass, this.oldPass).subscribe(function (data) {
-              _this5.pass = "";
-              _this5.cPass = "";
+              _this7.pass = "";
+              _this7.cPass = "";
 
-              _this5.loader.resume();
+              _this7.loader.resume();
 
-              _this5.bot.success("Password Changed Successfully !");
+              _this7.bot.success("Password Changed Successfully !");
             }, function (error) {
-              _this5.pass = "";
-              _this5.cPass = "";
+              _this7.pass = "";
+              _this7.cPass = "";
 
-              _this5.loader.resume();
+              _this7.loader.resume();
 
-              _this5.bot.fail(_this5.msg.show(error.error.status));
+              _this7.bot.fail(_this7.msg.show(error.error.status));
             });
           } else if (this.pass == "") {
             this.bot.fail("Password cannot be blank");
@@ -1760,26 +1949,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "list",
         value: function list() {
-          var _this6 = this;
+          var _this8 = this;
 
           this.loader.load();
           this.api.listRooms(this.fromDate, this.toDate).subscribe(function (response) {
-            _this6.persistedFromDate = _this6.fromDate;
-            _this6.persistedToDate = _this6.toDate;
+            _this8.persistedFromDate = _this8.fromDate;
+            _this8.persistedToDate = _this8.toDate;
 
-            _this6.loader.resume();
+            _this8.loader.resume();
 
-            _this6.api.validateResponse(response, function (data) {
-              _this6.rooms = data;
+            _this8.api.validateResponse(response, function (data) {
+              _this8.rooms = data;
             }, function (error) {
-              _this6.bot.fail(error);
+              _this8.bot.fail(error);
             });
           });
         }
       }, {
         key: "book",
         value: function book(id) {
-          var _this7 = this;
+          var _this9 = this;
 
           var booking = {};
           var room = {};
@@ -1789,14 +1978,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           booking.room = room;
           this.loader.load();
           this.api.book(booking).subscribe(function (response) {
-            _this7.loader.resume();
+            _this9.loader.resume();
 
-            _this7.api.validateResponse(response, function (data) {
-              _this7.rooms = _this7.rooms.filter(function (room) {
+            _this9.api.validateResponse(response, function (data) {
+              _this9.rooms = _this9.rooms.filter(function (room) {
                 return room.roomId != id;
               });
             }, function (error) {
-              return _this7.bot.fail(error);
+              return _this9.bot.fail(error);
             });
           });
         }
@@ -2154,26 +2343,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "login",
         value: function login() {
-          var _this8 = this;
+          var _this10 = this;
 
           this.loader.load();
           this.api.login(this.form.value).subscribe(function (response) {
-            _this8.api.validateResponse(response, function (data) {
-              _this8.loader.resume();
+            _this10.api.validateResponse(response, function (data) {
+              _this10.loader.resume();
 
-              if (_this8.remember) {
-                localStorage.setItem("savedUser", _this8.form.get("username").value);
-                localStorage.setItem("savedPassword", _this8.form.get("password").value);
+              if (_this10.remember) {
+                localStorage.setItem("savedUser", _this10.form.get("username").value);
+                localStorage.setItem("savedPassword", _this10.form.get("password").value);
               }
 
               localStorage.setItem('currentToken', data.token);
               localStorage.setItem('currentRole', data.user.role);
 
-              _this8.router.navigateByUrl("/");
+              _this10.router.navigateByUrl("/");
             }, function (error) {
-              _this8.loader.resume();
+              _this10.loader.resume();
 
-              _this8.bot.fail(error);
+              _this10.bot.fail(error);
             });
           });
         }
@@ -2193,13 +2382,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "resetPassword",
         value: function resetPassword() {
-          var _this9 = this;
+          var _this11 = this;
 
           if (this.username == "") this.bot.fail("Please enter a username first !");else {
             this.api.forgot(this.username).subscribe(function (data) {
-              _this9.bot.alert("The reset link has been sent to your registered e-mail !");
+              _this11.bot.alert("The reset link has been sent to your registered e-mail !");
             }, function (error) {
-              _this9.bot.fail(_this9.msg.show(error.error.status));
+              _this11.bot.fail(_this11.msg.show(error.error.status));
             });
           }
         }
@@ -2394,26 +2583,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "signUp",
         value: function signUp() {
-          var _this10 = this;
+          var _this12 = this;
 
           this.loader.load();
           this.api.signUp(this.form.value).subscribe(function (response) {
-            _this10.api.validateResponse(response, function (data) {
-              _this10.loader.resume();
+            _this12.api.validateResponse(response, function (data) {
+              _this12.loader.resume();
 
-              if (_this10.remember) {
-                localStorage.setItem("savedUser", _this10.form.get("username").value);
-                localStorage.setItem("savedPassword", _this10.form.get("password").value);
+              if (_this12.remember) {
+                localStorage.setItem("savedUser", _this12.form.get("username").value);
+                localStorage.setItem("savedPassword", _this12.form.get("password").value);
               }
 
               localStorage.setItem('currentToken', data.token);
               localStorage.setItem('currentRole', data.user.role);
 
-              _this10.router.navigateByUrl("/");
+              _this12.router.navigateByUrl("/");
             }, function (error) {
-              _this10.loader.resume();
+              _this12.loader.resume();
 
-              _this10.bot.fail(error);
+              _this12.bot.fail(error);
             });
           });
         }
@@ -2433,13 +2622,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "resetPassword",
         value: function resetPassword() {
-          var _this11 = this;
+          var _this13 = this;
 
           if (this.username == "") this.bot.fail("Please enter a username first !");else {
             this.api.forgot(this.username).subscribe(function (data) {
-              _this11.bot.alert("The reset link has been sent to your registered e-mail !");
+              _this13.bot.alert("The reset link has been sent to your registered e-mail !");
             }, function (error) {
-              _this11.bot.fail(_this11.msg.show(error.error.status));
+              _this13.bot.fail(_this13.msg.show(error.error.status));
             });
           }
         }
@@ -2565,7 +2754,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var ResetComponent = /*#__PURE__*/function () {
       function ResetComponent(bot, msg, api, route) {
-        var _this12 = this;
+        var _this14 = this;
 
         _classCallCheck(this, ResetComponent);
 
@@ -2577,7 +2766,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.confirmPassword = "";
         this.showPass = false;
         this.route.params.subscribe(function (val) {
-          _this12.token = _this12.route.snapshot.paramMap.get("token");
+          _this14.token = _this14.route.snapshot.paramMap.get("token");
         });
       }
 
@@ -2592,13 +2781,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "changePassword",
         value: function changePassword() {
-          var _this13 = this;
+          var _this15 = this;
 
           if (this.password != "" && this.confirmPassword == this.password) {
             this.api.reset(this.password, this.token).subscribe(function (data) {
-              _this13.bot.success("Password has been changed successfully !");
+              _this15.bot.success("Password has been changed successfully !");
             }, function (error) {
-              _this13.bot.fail(_this13.msg.show(error.error.status));
+              _this15.bot.fail(_this15.msg.show(error.error.status));
             });
           } else if (this.password == "") this.bot.fail("Password cannot be blank");else this.bot.fail("Password should be same in both the fields !");
         }
@@ -3128,7 +3317,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(TpInterceptorServicer, [{
         key: "intercept",
         value: function intercept(request, next) {
-          var _this14 = this;
+          var _this16 = this;
 
           var token = window.localStorage.getItem("currentToken");
 
@@ -3147,7 +3336,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               if (error.status == 401) {
                 localStorage.setItem("currentToken", undefined);
 
-                _this14.router.navigateByUrl("/login");
+                _this16.router.navigateByUrl("/login");
               }
             }
           }));

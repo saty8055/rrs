@@ -58,7 +58,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!-- Topbar -->\n<nav class=\"navbar navbar-fixed-top boxed\" style=\"z-index:10\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle topSpan\" (click)=\"toggleRightBar()\">\n                <span class=\"fa fa-user-circle\"></span>\n            </button>\n            <div class=\"navbar-brand\">\n                <div class=\"logoHolder\">\n                    <a class=\"btn\" (click)=\"toggleSideBar()\" [tooltip]=\"sideBar ? 'Hide Sidebar' : 'Open SideBar'\" placement=\"right\" show-delay=\"200\"><span class=\"fa fa-bars\"></span> </a>\n                    <img src=\"/assets/logoTagThumb.png\" style=\"cursor: none;\">\n                </div>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\">\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a (click)=\"activate('profile')\" [class.active]=\"key=='profile'\"><i class=\"fa fa-user-circle-o\"></i> Profile</a></li>\n                <li><a (click)=\"logout()\"><i class=\"fa fa-power-off\"></i> Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<!-- SideBar -->\n<div class=\"sideBar boxed\" [class.sideBarOpen]=\"sideBar\" style=\"z-index:100\">\n    <a [class.active]=\"key=='booking-history'\" (click)=\"activate('booking-history')\" [class.centered]=\"!sideBar\" tooltip=\"Booking History\" placement=\"right\" show-delay=\"200\">\n        <span class=\"sideIcon fa fa-calendar\" *ngIf=\"!sideBarMenu\"></span>\n        <span *ngIf=\"sideBarMenu\" class=\"fullLength\"> <span class=\"sideIconDefault fa fa-calendar\"></span> Booking History</span>\n    </a>\n    <a [class.active]=\"key=='room'\" (click)=\"activate('room')\" [class.centered]=\"!sideBar\" tooltip=\"Rooms\" placement=\"right\" show-delay=\"200\">\n        <span class=\"sideIcon fa fa-list\" *ngIf=\"!sideBarMenu\"></span>\n        <span *ngIf=\"sideBarMenu\" class=\"fullLength\"> <span class=\"sideIconDefault fa fa-list\"></span>Rooms</span>\n    </a>\n</div>\n\n<!-- Right SideBar -->\n<div class=\"rightSideBar\" [class.rightSideBarOpen]=\"rightSideBar\" style=\"z-index:100\">\n    <a (click)=\"activate('profile')\" [class.active]=\"key=='profile'\">\n        <span class=\"fullLength\"> <span class=\"sideIconDefault fa fa-user-circle-o\"></span> Profile</span>\n    </a>\n    <a (click)=\"logout()\">\n        <span class=\"fullLength\"> <span class=\"sideIconDefault fa fa-power-off\"></span>Logout</span>\n    </a>\n</div>\n\n<div class=\"contentBox\" [class.contentWall]=\"sideBar\">\n    <router-outlet></router-outlet>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- Topbar -->\n<nav class=\"navbar navbar-fixed-top boxed\" style=\"z-index:10\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle topSpan\" (click)=\"toggleRightBar()\">\n                <span class=\"fa fa-user-circle\"></span>\n            </button>\n            <div class=\"navbar-brand\">\n                <div class=\"logoHolder\">\n                    <a class=\"btn\" (click)=\"toggleSideBar()\" [tooltip]=\"sideBar ? 'Hide Sidebar' : 'Open SideBar'\" placement=\"right\" show-delay=\"200\"><span class=\"fa fa-bars\"></span> </a>\n                    <img src=\"/assets/logoTagThumb.png\" style=\"cursor: none;\">\n                </div>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\">\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a (click)=\"activate('profile')\" [class.active]=\"key=='profile'\"><i class=\"fa fa-user-circle-o\"></i> Profile</a></li>\n                <li><a (click)=\"logout()\"><i class=\"fa fa-power-off\"></i> Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<!-- SideBar -->\n<div class=\"sideBar boxed\" [class.sideBarOpen]=\"sideBar\" style=\"z-index:100\">\n    <a [class.active]=\"key=='booking-history'\" (click)=\"activate('booking-history')\" [class.centered]=\"!sideBar\" tooltip=\"Booking History\" placement=\"right\" show-delay=\"200\">\n        <span class=\"sideIcon fa fa-calendar\" *ngIf=\"!sideBarMenu\"></span>\n        <span *ngIf=\"sideBarMenu\" class=\"fullLength\"> <span class=\"sideIconDefault fa fa-calendar\"></span> Booking History</span>\n    </a>\n    <a [class.active]=\"key=='payment-history'\" (click)=\"activate('payment-history')\" [class.centered]=\"!sideBar\" tooltip=\"payment History\" placement=\"right\" show-delay=\"200\">\n        <span class=\"sideIcon fa fa-calendar\" *ngIf=\"!sideBarMenu\"></span>\n        <span *ngIf=\"sideBarMenu\" class=\"fullLength\"> <span class=\"sideIconDefault fa fa-calendar\"></span> Payment History</span>\n    </a>\n    <a [class.active]=\"key=='room'\" (click)=\"activate('room')\" [class.centered]=\"!sideBar\" tooltip=\"Rooms\" placement=\"right\" show-delay=\"200\">\n        <span class=\"sideIcon fa fa-list\" *ngIf=\"!sideBarMenu\"></span>\n        <span *ngIf=\"sideBarMenu\" class=\"fullLength\"> <span class=\"sideIconDefault fa fa-list\"></span>Rooms</span>\n    </a>\n</div>\n\n<!-- Right SideBar -->\n<div class=\"rightSideBar\" [class.rightSideBarOpen]=\"rightSideBar\" style=\"z-index:100\">\n    <a (click)=\"activate('profile')\" [class.active]=\"key=='profile'\">\n        <span class=\"fullLength\"> <span class=\"sideIconDefault fa fa-user-circle-o\"></span> Profile</span>\n    </a>\n    <a (click)=\"logout()\">\n        <span class=\"fullLength\"> <span class=\"sideIconDefault fa fa-power-off\"></span>Logout</span>\n    </a>\n</div>\n\n<div class=\"contentBox\" [class.contentWall]=\"sideBar\">\n    <router-outlet></router-outlet>\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/dashboard/payment-history/payment-history.component.html":
+/*!****************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/dashboard/payment-history/payment-history.component.html ***!
+  \****************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n <div class=\"table-responsive\">\n    <table class=\"table table-condensed table-bordered\">\n         <thead>\n             <tr>\n                 <th class=\"centered indexCell matchDouble\">#</th>\n                 <th class=\"extendedCell matchDouble\">Transaction ID</th>\n                 <th class=\"centered\">Transaction Amount</th>\n                 <th class=\"centered\">Transaction Time</th>\n                 <th class=\"centered\">Room Number</th>\n             </tr>\n         </thead>\n         <tbody>\n             <tr *ngFor=\"let record of bookings; let i=index;\">\n                 <th>{{i+1}}</th>\n                 <td>{{record.room.bookingId}}</td>\n                 <td>{{record.room.price| number :'.2-2'}}</td>\n                 <td>{{record.createdAt | date:'dd/MM/yyyy - hh:mm aa'}}</td>\n                 <td>{{record.room.roomNumber}}</td>\n             </tr>\n             <tr *ngIf=\"bookings.length <1 \">\n                 <th colspan=\"13\">No Record found</th>\n                 </tr>\n         </tbody>\n     </table>\n  \n </div>\n \n <app-loader></app-loader>");
 
 /***/ }),
 
@@ -429,6 +442,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dashboard_booking_booking_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./dashboard/booking/booking.component */ "./src/app/dashboard/booking/booking.component.ts");
 /* harmony import */ var _dashboard_room_room_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./dashboard/room/room.component */ "./src/app/dashboard/room/room.component.ts");
 /* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
+/* harmony import */ var _dashboard_payment_history_payment_history_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./dashboard/payment-history/payment-history.component */ "./src/app/dashboard/payment-history/payment-history.component.ts");
+
 
 
 
@@ -450,6 +465,9 @@ const routes = [{
             }, {
                 path: "booking-history",
                 component: _dashboard_booking_booking_component__WEBPACK_IMPORTED_MODULE_9__["BookingComponent"]
+            }, {
+                path: "payment-history",
+                component: _dashboard_payment_history_payment_history_component__WEBPACK_IMPORTED_MODULE_12__["PaymentHistoryComponent"]
             }, {
                 path: "room",
                 component: _dashboard_room_room_component__WEBPACK_IMPORTED_MODULE_10__["RoomComponent"]
@@ -562,6 +580,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dashboard_room_room_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./dashboard/room/room.component */ "./src/app/dashboard/room/room.component.ts");
 /* harmony import */ var _dashboard_booking_booking_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./dashboard/booking/booking.component */ "./src/app/dashboard/booking/booking.component.ts");
 /* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
+/* harmony import */ var _dashboard_payment_history_payment_history_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./dashboard/payment-history/payment-history.component */ "./src/app/dashboard/payment-history/payment-history.component.ts");
+
 
 
 
@@ -598,6 +618,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _dashboard_room_room_component__WEBPACK_IMPORTED_MODULE_18__["RoomComponent"],
             _dashboard_booking_booking_component__WEBPACK_IMPORTED_MODULE_19__["BookingComponent"],
             _register_register_component__WEBPACK_IMPORTED_MODULE_20__["RegisterComponent"],
+            _dashboard_payment_history_payment_history_component__WEBPACK_IMPORTED_MODULE_21__["PaymentHistoryComponent"],
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -811,6 +832,99 @@ DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./dashboard.component.css */ "./src/app/dashboard/dashboard.component.css")).default]
     })
 ], DashboardComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/dashboard/payment-history/payment-history.component.css":
+/*!*************************************************************************!*\
+  !*** ./src/app/dashboard/payment-history/payment-history.component.css ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Rhc2hib2FyZC9wYXltZW50LWhpc3RvcnkvcGF5bWVudC1oaXN0b3J5LmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/dashboard/payment-history/payment-history.component.ts":
+/*!************************************************************************!*\
+  !*** ./src/app/dashboard/payment-history/payment-history.component.ts ***!
+  \************************************************************************/
+/*! exports provided: PaymentHistoryComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PaymentHistoryComponent", function() { return PaymentHistoryComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_app_loader_loader_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/loader/loader.component */ "./src/app/loader/loader.component.ts");
+/* harmony import */ var src_app_services_api_api_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/api/api.service */ "./src/app/services/api/api.service.ts");
+/* harmony import */ var src_app_services_notification_bot_bot_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/services/notification-bot/bot.service */ "./src/app/services/notification-bot/bot.service.ts");
+
+
+
+
+
+let PaymentHistoryComponent = class PaymentHistoryComponent {
+    constructor(api, bot) {
+        this.api = api;
+        this.bot = bot;
+        this.page = {};
+        this.bookings = [];
+        this.pageNumber = 0;
+        this.pageSize = 50;
+        this.sortBy = "bookingFrom";
+        this.sortDirection = "desc";
+    }
+    ngOnInit() {
+        this.load();
+    }
+    load() {
+        this.loader.load();
+        this.api.listBookings(this.pageNumber, this.pageSize, this.sortBy, this.sortDirection).subscribe(response => {
+            this.loader.resume();
+            this.api.validateResponse(response, data => {
+                this.page.numberOfElements = data.numberOfElements;
+                this.page.totalPages = data.totalPages;
+                this.page.totalElements = data.totalElements;
+                this.bookings = data.content;
+            }, error => {
+                this.bot.fail(error);
+            });
+        });
+    }
+    cancel(id) {
+        this.loader.load();
+        this.api.cancel(id).subscribe(response => {
+            this.loader.resume();
+            this.api.validateResponse(response, data => {
+                this.bot.success("Booking Cancelled !");
+                this.load();
+            }, error => {
+                this.bot.fail(error);
+            });
+        });
+    }
+};
+PaymentHistoryComponent.ctorParameters = () => [
+    { type: src_app_services_api_api_service__WEBPACK_IMPORTED_MODULE_3__["ApiService"] },
+    { type: src_app_services_notification_bot_bot_service__WEBPACK_IMPORTED_MODULE_4__["BotService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(src_app_loader_loader_component__WEBPACK_IMPORTED_MODULE_2__["LoaderComponent"], { static: true })
+], PaymentHistoryComponent.prototype, "loader", void 0);
+PaymentHistoryComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-payment-history',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./payment-history.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/dashboard/payment-history/payment-history.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./payment-history.component.css */ "./src/app/dashboard/payment-history/payment-history.component.css")).default]
+    })
+], PaymentHistoryComponent);
 
 
 
